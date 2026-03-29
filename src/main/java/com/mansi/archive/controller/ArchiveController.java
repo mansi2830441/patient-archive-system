@@ -1,0 +1,39 @@
+package com.mansi.archive.controller;
+
+import com.mansi.archive.entity.Patient;
+import com.mansi.archive.service.ArchiveService;
+import org.springframework.web.bind.annotation.*;
+
+import java.util.List;
+
+@RestController
+@RequestMapping("/api")
+public class ArchiveController {
+
+    private final ArchiveService service;
+
+    public ArchiveController(ArchiveService service) {
+        this.service = service;
+    }
+
+    @PostMapping("/add")
+    public Patient add(@RequestBody Patient p) {
+        return service.addPatient(p);
+    }
+
+    @GetMapping("/all")
+    public List<Patient> all() {
+        return service.getAll();
+    }
+
+    @DeleteMapping("/delete/{id}")
+    public String delete(@PathVariable Long id) {
+        service.delete(id);
+        return "Deleted successfully";
+    }
+
+    @PutMapping("/update/{id}")
+    public Patient update(@PathVariable Long id, @RequestBody Patient p) {
+        return service.update(id, p);
+    }
+}
