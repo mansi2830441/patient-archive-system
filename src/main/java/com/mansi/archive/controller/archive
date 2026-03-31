@@ -2,7 +2,6 @@ package com.mansi.archive.controller;
 
 import com.mansi.archive.entity.Patient;
 import com.mansi.archive.service.ArchiveService;
-import jakarta.validation.Valid;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -18,7 +17,7 @@ public class ArchiveController {
     }
 
     @PostMapping("/add")
-    public Patient add(@Valid @RequestBody Patient p) {
+    public Patient add(@RequestBody Patient p) {
         return service.addPatient(p);
     }
 
@@ -28,7 +27,7 @@ public class ArchiveController {
     }
 
     @PutMapping("/update/{id}")
-    public Patient update(@PathVariable Long id, @Valid @RequestBody Patient p) {
+    public Patient update(@PathVariable Long id, @RequestBody Patient p) {
         return service.update(id, p);
     }
 
