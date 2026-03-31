@@ -40,3 +40,6 @@ This project is a backend system designed to manage patient data using REST APIs
 ![alt text](image.png)
 ![alt text](image-1.png)
 ![alt text](image-2.png)
+## ✨ Contribution
+
+This project is being actively improved.
