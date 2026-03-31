@@ -103,3 +103,11 @@ git clone https://github.com/mansi2830441/patient-archive-system.git
   "name": "Mansi",
   "age": 22
 }
+## 📸 Screenshots
+
+### Swagger UI
+<img width="938" height="457" alt="image" src="https://github.com/user-attachments/assets/2f97e85a-4601-4f98-a83f-7fabbd304891" />
+<img width="941" height="477" alt="image" src="https://github.com/user-attachments/assets/e2db8d2c-e6fd-4bdd-a5e2-eece7cd89374" />
+<img width="942" height="489" alt="image" src="https://github.com/user-attachments/assets/ecb372a0-ff71-4a30-88bc-d46051cfd328" />
+
+
